@@ -8,6 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 /* En-tête de la page */
@@ -27,7 +28,8 @@ body {
 }
 
 .main-header .logo img {
-    max-height: 50px;
+    max-width: 100%;
+    height: auto;
 }
 
 .main-nav {
@@ -38,10 +40,9 @@ body {
 }
 
 .main-nav .nav-links {
-    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px; 
+    gap: 15px; /* Espacement entre les éléments */
     margin: 0;
     padding: 0;
 }
@@ -430,8 +431,6 @@ body {
     }
 }
 
-
-/* Pour les petits écrans */
 @media (max-width: 768px) {
     .main-header {
         flex-direction: column;
@@ -461,7 +460,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    /* Réduire encore les espacements et tailles sur les très petits écrans */
     .main-nav .nav-links {
         gap: 10px;
     }
@@ -473,6 +471,30 @@ body {
 
     .main-header .logo img {
         max-height: 35px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .promo-section, .about-section, .formation-section, .contact-section {
+        padding: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-section, .about-section, .formation-section, .contact-section {
+        padding: 10px; /
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 5px;
     }
 }
 
