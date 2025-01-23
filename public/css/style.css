@@ -147,7 +147,7 @@ body {
 .promo-section {
     background-color: #fff;
     color: black;
-    padding: 40px 20px;  /* Ajout padding spécifique */
+    padding: 40px;
     text-align: center;
 }
 
@@ -207,7 +207,7 @@ body {
 
 .contact-section input,
 .contact-section textarea {
-    width: 100%;
+    width: 300px;
     padding: 10px;
     margin: 10px 0;
 }
@@ -455,32 +455,112 @@ body {
         font-size: 14px;
         padding: 8px 12px; 
     }
+
+    .carousel-section {
+        width: 100%;
+    }
+
+    .carousel-item img {
+        width: 100%;
+    }
+
+    .promo-section {
+        padding: 20px;
+    }
+
+    .formation-card {
+        width: 100%;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        width: 100%;
+    }
 }
 
-@media (max-width: 480px) {
-    /* Réduire encore les espacements et tailles sur les très petits écrans */
-    .main-nav .nav-links {
-        gap: 10px;
+/* Modifications spécifiques pour un écran de 321px de largeur */
+@media (max-width: 321px) {
+    .main-header .logo img {
+        max-height: 30px;
     }
 
     .main-nav .nav-links li a {
         font-size: 12px;
-        padding: 6px 10px;
-    }
-
-    .main-header .logo img {
-        max-height: 35px; 
+        padding: 6px 8px;
     }
 
     .promo-section h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    .promo-section p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 10px;
     }
 
     .cta-button {
         font-size: 1rem;
+        padding: 10px 20px;
     }
 
-    .footer {
-        padding: 15px;
+    .formation-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .formation-card h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        width: 90%;
+        padding: 8px;
+        margin: 10px 0;
+    }
+
+    .footer-logo {
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .social-links a {
+        font-size: 20px;
+    }
+
+    .about {
+        font-size: 12px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .contact-form button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .carousel-item img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .carousel-section {
+        width: 100%;
+        max-width: none;
     }
 }
+
