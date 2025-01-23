@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site MolenGeek - Réalise tes rêves dans le monde du numérique">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>MolenGeek - Accélérateur de talents numériques</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <!-- En-tête de page -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="public/img/MG_LOGO_V3x50-1.png" alt="Logo MolenGeek">
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="#campus">Campus</a></li>
+                <li><a href="https://molengeek.com/formations-longues/" class="formation-link">Formation Longues</a></li>
+                <li><a href="https://molengeek.com/formations-digitales-courtes/" class="formation-link">Formation courtes</a></li>
+                <li><a href="#formation-dates" >Formations à venir</a></li>
+                <li><a href="#Cefa-X-Molengeek">Cefa-X-Molengeek</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Social">Réseaux Sociaux</a></li>
+            </ul>
+             <!-- Hamburger Menu Button -->
+        <div class="burger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        </nav>
+    </header>
+    <!-- Carrousel d'images -->
+    <section class="carousel-section">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="public/img/yoda.jpg" alt="Carrousel Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="public/img/Goldo.png" alt="Carrousel Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="public/img/head.jpg" alt="Carrousel Image 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section à propos -->
+    <section id="apropos" class="about-section">
+        <h2>À propos de MolenGeek</h2>
+        <p>MolenGeek est un accélérateur de talents numériques. Nous formons des jeunes de tous horizons aux métiers du numérique, dans un environnement stimulant et bienveillant.</p>
+    </section>
+
+    <section id="drop">
+        <h2>Formations à venir</h2>
+        <!--  menu déroulant  -->
+        <div class="dropdown">
+            <select id="formation-dates" name="formation-dates">
+                <option value="14/02">SÉANCE D'INFO TIC - 14/02</option>
+                <option value="20/01-23/01">FORMATION PYTHON (Niveau débutant) - 20/01 - 23/01</option>
+                <option value="20/01-23/01">FORMATION PHOTOSHOP (Niveau débutant) - 20/01 - 23/01</option>
+                <option value="20/01-22/01">FORMATION PREMIERE PRO (Niveau débutant) - 20/01 - 22/01</option>
+                <option value="23/01-24/01">FORMATION WORDPRESS (Niveau débutant) - 23/01 - 24/01</option>
+                <option value="23/01">FORMATION WORDPRESS (Niveau avancé) - 23/01</option>
+                <option value="24/01">FORMATION GOOGLE ADWORDS (Niveau débutant) - 24/01</option>
+                <option value="27/01-29/01">FORMATION GOOGLE ANALYTICS (Niveau débutant) - 27/01 - 29/01</option>
+                <option value="27/01-29/01">FORMATION RÉSEAUX SOCIAUX (Niveau débutant) - 27/01 - 29/01</option>
+                <option value="27/01-30/01">FORMATION HTML (Niveau débutant) - 27/01 - 30/01</option>
+                <option value="27/01-29/01">FORMATION INDESIGN (Niveau débutant) - 27/01 - 29/01</option>
+                <option value="27/01-30/01">FORMATION SHOPIFY (Niveau débutant) - 27/01 - 30/01</option>
+                <option value="30/01-31/01">FORMATION ILLUSTRATOR (Niveau débutant) - 30/01 - 31/01</option>
+                <option value="30/01-31/01">FORMATION RÉSEAUX SOCIAUX (Niveau avancé) - 30/01 - 31/01</option>
+                <option value="30/01-31/01">FORMATION SHOPIFY (Niveau avancé) - 30/01 - 31/01</option>
+                <option value="03/02-06/02">FORMATION AUDITION (Niveau débutant) - 03/02 - 06/02</option>
+                <option value="03/02-06/02">FORMATION PREMIERE PRO (Niveau débutant) - 03/02 - 06/02</option>
+                <option value="03/02-06/02">FORMATION JAVASCRIPT (Niveau débutant) - 03/02 - 06/02</option>
+                <option value="03/02-05/02">FORMATION AFTER EFFECT (Niveau débutant) - 03/02 - 05/02</option>
+                <option value="06/02-07/02">FORMATION WORDPRESS (Niveau débutant) - 06/02 - 07/02</option>
+                <option value="06/02">FORMATION WORDPRESS (Niveau avancé) - 06/02</option>
+                <option value="07/02">FORMATION GOOGLE ADWORDS (Niveau débutant) - 07/02</option>
+                <option value="10/02-13/02">FORMATION GOOGLE ANALYTICS (Niveau débutant) - 10/02 - 13/02</option>
+                <option value="10/02-12/02">FORMATION PYTHON (Niveau débutant) - 10/02 - 12/02</option>
+                <option value="27/01-29/01">FORMATION RÉSEAUX SOCIAUX (Niveau débutant) - 27/01 - 29/01</option>
+                <option value="all">Voir toutes les formations</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Section promotionnelle -->
+    <section id="Cefa-X-Molengeek" class="promo-section">
+        <div class="promo-content">
+            <h1>CEFA X MOLENGEEK : CODING ADO 15-18 ANS</h1>
+            <p>
+                Pour la première fois, MolenGeek s’ouvre au 15-18 ans avec un programme pour devenir Web Developper en collaboration avec le CEFA ! Tu peux apprendre à créer tes propres applications et sites web tout en continuant l’école ! 📱💻
+            </p>
+            <p>
+                Si tu as au moins 15 ans et que tu t’intéresses au développement web, sans attendre la fin de tes études pour t’y mettre sérieusement, cette formation est faite pour toi !
+            </p>
+            <p>
+                MolenGeek va sélectionner les candidats en fonction de leur motivation. Aucun autre prérequis n’est nécessaire. Alors, viens avec ta motivation et repars avec des compétences et commence ta carrière dans l’IT ! 🚀
+            </p>
+            <p>
+                ➡️ Inscris-toi vite, les places sont limitées ! 🎟️
+            </p>
+            <button class="cta-button">Inscris-toi maintenant</button>
+        </div>
+    </section>
+
+    <!-- Section contact -->
+    <section id="contact" class="contact-section">
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h2>Contactez-nous</h2>
+                <form>
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <textarea name="message" placeholder="Votre message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+    
+            <!-- Carte à côté du formulaire -->
+            <div id="campus" class="contact-card">
+                <h3>Nous trouver</h3>
+                <p>Nous sommes situés à l'adresse suivante :</p>
+                <p>123 Rue Exemple, 1000 Bruxelles</p>
+                <p>Téléphone : +32 123 456 789</p>
+                <p>Email : contact@exemple.com</p>
+    
+                <!-- Intégration d'un plan Google Maps -->
+                <div class="map-container">
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.6937380587406!2d4.338645076428903!3d50.85535537167229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e0!3m2!1sfr!2sbe!4v1737371693701!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   <!-- Section partenaires -->
+    <div class="wrapper">
+        <h3 class="info">Nos partenaires</h3>
+        <div class="inner">
+          <div class="card" style="--index: 0; --color: 240, 140, 50;">
+            <img src="public/img/google.png" alt="Google">
+          </div>
+          <div class="card" style="--index: 1; --color: 240, 140, 140;">
+            <img src="public/img/proximus.png" alt="proximus">
+          </div>
+          <div class="card" style="--index: 2; --color: 140, 140, 140;">
+            <img src="public/img/bnp.png" alt="bnp-paribas">
+          </div>
+          <div class="card" style="--index: 3; --color: 50, 140, 140;">
+            <img src="public/img/microsoft.png" alt="microsoft">
+          </div>
+          <div class="card" style="--index: 4; --color: 50, 140, 240;">
+            <img src="public/img/meta.png" alt="meta">
+          </div>
+          <div class="card" style="--index: 5; --color: 50, 240, 140;">
+            <img src="public/img/pwc.png" alt="pwc">
+          </div>
+          <div class="card" style="--index: 6; --color: 140, 240, 140;">
+            <img src="public/img/aws.png" alt="aws">
+          </div>
+          <div class="card" style="--index: 7; --color: 140, 240, 50;">
+            <img src="public/img/actiris.png" alt="actiris">
+          </div>
+          <div class="card" style="--index: 8; --color: 240, 240, 50;">
+            <img src="public/img/bxl-formation.png" alt="bxl-formation">
+          </div>
+        </div>
+    </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div id="Social" class="footer-content">
+        <div class="social-links">
+            <a href="https://www.facebook.com/molengeek?mibextid=LQQJ4d&rdid=GPqBvnv2yYMcyP1z&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FJgK1nXs75GVpewpF%2F%3Fmibextid%3DLQQJ4d#" target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fmolengeek" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://www.instagram.com/molengeek/?igsh=bDZ0emN1eXkybXQ0&utm_source=qr#" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.tiktok.com/@molengeek.com?_t=8pShag8hYLQ&_r=1" target="_blank" class="social-icon">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+        </div>
+        <p class="about">
+            <img src="public/img/MG_LOGO_V3x50-1.png" alt="MolenGeek Logo" class="footer-logo">
+            MolenGeek est une organisation à but non lucratif.
+        </p>
+        <p class="copyright">
+            Copyright &copy; 2022. Coworking Co.
+        </p>
+    </div>
+</footer>
+  <script src="public/javascript/main.js"></script>
+</html>
