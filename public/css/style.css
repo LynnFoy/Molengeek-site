@@ -218,9 +218,9 @@ body {
     color: black;
     font-size: 24px; 
     font-weight: bold; 
-}
-
-.wrapper {
+  }
+  
+  .wrapper {
     position: relative;
     margin-left: 5%;
     height: 40vh;  
@@ -230,9 +230,9 @@ body {
     justify-content: center;  
     flex-direction: column;  
     gap: 20px; 
-}
-
-.inner {
+  }
+  
+  .inner {
     position: relative;
     width: 100px;
     height: 100px;
@@ -242,15 +242,15 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center; 
-}
+  }
 
-.card img {
+  .card img {
     max-width: 100%;
     height: auto;
     object-fit: cover;  
-}
-
-.card {
+  }
+  
+  .card {
     position: absolute;
     border: 2px solid rgba(var(--color), 0.4);
     background: rgba(var(--color), 0.2);
@@ -260,15 +260,15 @@ body {
     height: 120px;
     transform: rotateY(calc((360deg / 10) * var(--index))) translateZ(200px);
     transition: 0.3s ease;
-}
-
-.card:hover {
+  }
+  
+  .card:hover {
     border: 2px solid rgba(var(--color), 1);
     background: rgba(var(--color), 1);
     box-shadow: 0 0 1em white;
-}
-
-/* Section Contact */
+  }
+  
+  /* Section Contact */
 .contact-section {
     background-color: #fff;
     color: white;
@@ -334,13 +334,14 @@ body {
 .contact-card p {
     margin: 10px 0;
 }
-
-.map-container iframe {
+  
+  .map-container iframe {
     width: 100%;
     height: 300px;
     border: 0;
     border-radius: 8px;
 }
+  
 
 /* Style de base du footer */
 .footer {
@@ -430,7 +431,10 @@ body {
     .nav-links.active {
         display: flex;
     }
+}
 
+
+@media (max-width: 768px) {
     .main-header {
         flex-direction: column;
         padding: 15px;
@@ -451,116 +455,25 @@ body {
         max-height: 40px; 
     }
 
+    
     .main-nav .nav-links li a {
         font-size: 14px;
         padding: 8px 12px; 
     }
-
-    .carousel-section {
-        width: 100%;
-    }
-
-    .carousel-item img {
-        width: 100%;
-    }
-
-    .promo-section {
-        padding: 20px;
-    }
-
-    .formation-card {
-        width: 100%;
-    }
-
-    .contact-section input,
-    .contact-section textarea {
-        width: 100%;
-    }
 }
 
-/* Modifications spécifiques pour un écran de 321px de largeur */
-@media (max-width: 321px) {
-    .main-header .logo img {
-        max-height: 30px;
+@media (max-width: 480px) {
+    /* Réduire encore les espacements et tailles sur les très petits écrans */
+    .main-nav .nav-links {
+        gap: 10px;
     }
 
     .main-nav .nav-links li a {
         font-size: 12px;
-        padding: 6px 8px;
+        padding: 6px 10px;
     }
 
-    .promo-section h1 {
-        font-size: 1.6rem;
-        margin-bottom: 15px;
-    }
-
-    .promo-section p {
-        font-size: 1rem;
-        line-height: 1.4;
-        margin-bottom: 10px;
-    }
-
-    .cta-button {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-
-    .formation-card {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .formation-card h3 {
-        font-size: 16px;
-        margin-bottom: 8px;
-    }
-
-    .contact-section input,
-    .contact-section textarea {
-        width: 90%;
-        padding: 8px;
-        margin: 10px 0;
-    }
-
-    .footer-logo {
-        max-width: 150px;
-        margin-bottom: 10px;
-    }
-
-    .social-links a {
-        font-size: 20px;
-    }
-
-    .about {
-        font-size: 12px;
-    }
-
-    .copyright {
-        font-size: 12px;
-    }
-
-    .contact-form button {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
-    .contact-wrapper {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .contact-form {
-        width: 100%;
-    }
-
-    .carousel-item img {
-        width: 100%; 
-        height: auto;
-    }
-
-    .carousel-section {
-        width: 100%;
-        max-width: none;
+    .main-header .logo img {
+        max-height: 35px; 
     }
 }
-
