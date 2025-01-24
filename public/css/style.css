@@ -212,15 +212,15 @@ body {
     margin: 10px 0;
 }
 
-/* section partenaire*/
+/* Section partenaire*/
 .info {
     margin-bottom: 40px; 
     color: black;
     font-size: 24px; 
     font-weight: bold; 
-  }
-  
-  .wrapper {
+}
+
+.wrapper {
     position: relative;
     margin-left: 5%;
     height: 40vh;  
@@ -230,9 +230,9 @@ body {
     justify-content: center;  
     flex-direction: column;  
     gap: 20px; 
-  }
-  
-  .inner {
+}
+
+.inner {
     position: relative;
     width: 100px;
     height: 100px;
@@ -242,15 +242,15 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center; 
-  }
+}
 
-  .card img {
+.card img {
     max-width: 100%;
     height: auto;
     object-fit: cover;  
-  }
-  
-  .card {
+}
+
+.card {
     position: absolute;
     border: 2px solid rgba(var(--color), 0.4);
     background: rgba(var(--color), 0.2);
@@ -260,15 +260,15 @@ body {
     height: 120px;
     transform: rotateY(calc((360deg / 10) * var(--index))) translateZ(200px);
     transition: 0.3s ease;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     border: 2px solid rgba(var(--color), 1);
     background: rgba(var(--color), 1);
     box-shadow: 0 0 1em white;
-  }
-  
-  /* Section Contact */
+}
+
+/* Section Contact */
 .contact-section {
     background-color: #fff;
     color: white;
@@ -334,14 +334,13 @@ body {
 .contact-card p {
     margin: 10px 0;
 }
-  
-  .map-container iframe {
+
+.map-container iframe {
     width: 100%;
     height: 300px;
     border: 0;
     border-radius: 8px;
 }
-  
 
 /* Style de base du footer */
 .footer {
@@ -433,7 +432,6 @@ body {
     }
 }
 
-
 @media (max-width: 768px) {
     .main-header {
         flex-direction: column;
@@ -455,7 +453,6 @@ body {
         max-height: 40px; 
     }
 
-    
     .main-nav .nav-links li a {
         font-size: 14px;
         padding: 8px 12px; 
@@ -475,5 +472,152 @@ body {
 
     .main-header .logo img {
         max-height: 35px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;  /* Empile les éléments */
+        gap: 15px; /* Réduit l'écart entre les éléments */
+    }
+
+    .contact-form, .contact-card {
+        flex: none;  /* Supprime la répartition égale entre les deux éléments */
+        width: 100%; /* Les éléments prennent 100% de largeur */
+    }
+
+    .contact-form button {
+        width: 100%; /* Le bouton prend toute la largeur */
+    }
+
+    .map-container iframe {
+        height: 250px; /* Réduit la taille de la carte sur les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 20px 10px; /* Réduit les paddings sur très petits écrans */
+    }
+
+    .contact-form h2 {
+        font-size: 20px; /* Réduit la taille du titre */
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px; /* Réduit la taille de la police dans les champs */
+    }
+
+    .contact-form button {
+        font-size: 14px; /* Réduit la taille du texte sur le bouton */
+        padding: 12px; /* Ajuste la taille du bouton */
+    }
+
+    .contact-card h3 {
+        font-size: 18px; /* Réduit la taille du titre dans la carte */
+    }
+
+    .contact-card p {
+        font-size: 14px; /* Réduit la taille du texte */
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        font-size: 20px;
+    }
+
+    .wrapper {
+        height: 30vh;
+        width: 95vw;
+        margin-left: 2%;
+    }
+
+    .card {
+        width: 80px;
+        height: 100px;
+    }
+
+    .inner {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info {
+        font-size: 18px;
+    }
+
+    .wrapper {
+        height: 25vh;
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 60px;
+        height: 80px;
+    }
+
+    .inner {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .wrapper {
+        height: 60vh;
+        width: 80vw;
+    }
+    .card {
+        width: 80px;
+        height: 100px;
+        transform: rotateY(calc((360deg / 8) * var(--index))) translateZ(150px);
+    }
+    .info {
+        font-size: 20px;
+    }
+}
+
+/* Pour les écrans de moins de 768px (mobiles) */
+@media (max-width: 768px) {
+    .wrapper {
+        height: 70vh;
+        width: 90vw;
+    }
+    .inner {
+        width: 80px;
+        height: 80px;
+    }
+    .card {
+        width: 70px;
+        height: 90px;
+        transform: rotateY(calc((360deg / 6) * var(--index))) translateZ(100px);
+    }
+    .info {
+        font-size: 18px;
+    }
+}
+
+/* Pour les écrans de moins de 480px (téléphones très petits) */
+@media (max-width: 480px) {
+    .wrapper {
+        height: 80vh;
+        width: 95vw;
+    }
+    .inner {
+        width: 70px;
+        height: 70px;
+    }
+    .card {
+        width: 60px;
+        height: 80px;
+        transform: rotateY(calc((360deg / 5) * var(--index))) translateZ(50px);
+    }
+    .info {
+        font-size: 16px;
     }
 }
