@@ -477,95 +477,50 @@ body {
 
 @media (max-width: 768px) {
     .contact-wrapper {
-        flex-direction: column;  /* Empile les éléments */
-        gap: 15px; /* Réduit l'écart entre les éléments */
+        flex-direction: column;  
+        gap: 15px; 
     }
 
     .contact-form, .contact-card {
-        flex: none;  /* Supprime la répartition égale entre les deux éléments */
-        width: 100%; /* Les éléments prennent 100% de largeur */
+        flex: none;  
+        width: 100%; 
     }
 
     .contact-form button {
-        width: 100%; /* Le bouton prend toute la largeur */
+        width: 100%; 
     }
 
     .map-container iframe {
-        height: 250px; /* Réduit la taille de la carte sur les petits écrans */
+        height: 250px; 
     }
 }
 
 @media (max-width: 480px) {
     .contact-section {
-        padding: 20px 10px; /* Réduit les paddings sur très petits écrans */
+        padding: 20px 10px; 
     }
 
     .contact-form h2 {
-        font-size: 20px; /* Réduit la taille du titre */
+        font-size: 20px; 
     }
 
     .contact-form input, .contact-form textarea {
-        font-size: 14px; /* Réduit la taille de la police dans les champs */
+        font-size: 14px; 
     }
 
     .contact-form button {
-        font-size: 14px; /* Réduit la taille du texte sur le bouton */
-        padding: 12px; /* Ajuste la taille du bouton */
+        font-size: 14px; 
+        padding: 12px; 
     }
 
     .contact-card h3 {
-        font-size: 18px; /* Réduit la taille du titre dans la carte */
+        font-size: 18px; 
     }
 
     .contact-card p {
-        font-size: 14px; /* Réduit la taille du texte */
+        font-size: 14px; 
     }
 }
-
-@media (max-width: 768px) {
-    .info {
-        font-size: 20px;
-    }
-
-    .wrapper {
-        height: 30vh;
-        width: 95vw;
-        margin-left: 2%;
-    }
-
-    .card {
-        width: 80px;
-        height: 100px;
-    }
-
-    .inner {
-        width: 80px;
-        height: 80px;
-    }
-}
-
-@media (max-width: 480px) {
-    .info {
-        font-size: 18px;
-    }
-
-    .wrapper {
-        height: 25vh;
-        width: 100vw;
-        margin-left: 0;
-    }
-
-    .card {
-        width: 60px;
-        height: 80px;
-    }
-
-    .inner {
-        width: 60px;
-        height: 60px;
-    }
-}
-
 
 @media (max-width: 1024px) {
     .wrapper {
@@ -585,39 +540,62 @@ body {
 /* Pour les écrans de moins de 768px (mobiles) */
 @media (max-width: 768px) {
     .wrapper {
-        height: 70vh;
-        width: 90vw;
-    }
-    .inner {
-        width: 80px;
-        height: 80px;
+        height: 80vh; 
+        width: 90vw;  
     }
     .card {
-        width: 70px;
-        height: 90px;
-        transform: rotateY(calc((360deg / 6) * var(--index))) translateZ(100px);
+        width: 80px;  
+        height: 100px;
+        transform: rotateY(calc((360deg / 6) * var(--index))) translateZ(150px);
     }
     .info {
-        font-size: 18px;
+        font-size: 20px; 
     }
 }
 
 /* Pour les écrans de moins de 480px (téléphones très petits) */
 @media (max-width: 480px) {
     .wrapper {
-        height: 80vh;
-        width: 95vw;
+        height: 40vh; 
+        width: 95vw;  
     }
     .inner {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;  
     }
     .card {
-        width: 60px;
-        height: 80px;
-        transform: rotateY(calc((360deg / 5) * var(--index))) translateZ(50px);
+        width: 70px;  
+        height: 90px;
+        transform: rotateY(calc((360deg / 5) * var(--index))) translateZ(100px);
     }
     .info {
-        font-size: 16px;
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        display: flex;
+        justify-content: center; 
+        gap: 15px; 
+        margin-top: 10px; 
+    }
+
+    .social-links a {
+        font-size: 20px; 
+    }
+}
+
+/* Pour les écrans de moins de 480px (téléphones très petits) */
+@media (max-width: 480px) {
+    .social-links {
+        display: flex;
+        justify-content: center; 
+        gap: 10px; 
+        margin-top: 5px; 
+    }
+
+    .social-links a {
+        font-size: 18px; 
     }
 }
